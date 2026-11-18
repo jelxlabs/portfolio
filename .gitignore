@@ -1,0 +1,13 @@
+# Scratch / reference screenshots
+Screenshot from *.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencies / build
+node_modules/
+dist/
+.env
+.env.local

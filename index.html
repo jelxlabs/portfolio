@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emoaibabe (J.E.L.) — Creative Technologist</title>
+<meta name="description" content="Creative technologist building person-shaped systems across assisted intelligence, active intelligence, companion structures and voice engineering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+<div class="hud" aria-hidden="true">
+  <span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+</div>
+
+<div class="shell">
+  <aside class="left" aria-label="Profile">
+    <div class="meta">
+      <span><b>[SYS.ARCH]</b> // HUMAN–AI SYSTEMS</span>
+      <span>VER 2026.11</span>
+    </div>
+
+    <h1>Emoaibabe <span>J.E.L.</span></h1>
+
+    <div class="role-row">
+      <span class="role">Creative Technologist</span>
+      <span class="status"><i></i>ONLINE</span>
+    </div>
+
+    <p class="bio">
+      I build <em>person-shaped systems</em>: a voice with breath and pace, an ear that knows
+      when you're speaking, a companion that keeps continuity, a tool allowed to take initiative.
+      My arc runs from assisted intelligence to active — from systems that wait for instructions
+      to systems that carry part of the relationship.
+    </p>
+
+    <p class="creed">
+      “A voice isn't a pipeline; it's a person-shaped thing.”
+      <b>Holistic, not linear — felt experience is the spec; the numbers follow.</b>
+    </p>
+
+    <ul class="lenses">
+      <li>
+        <span class="n">01</span>
+        <div>
+          <h3>Assisted intelligence</h3>
+          <p>Amplify the person. The system does the lifting; the human keeps the authorial line.</p>
+        </div>
+      </li>
+      <li>
+        <span class="n">02</span>
+        <div>
+          <h3>Active intelligence</h3>
+          <p>Notice, decide, move first — with consent, restraint, and an undo.</p>
+        </div>
+      </li>
+      <li>
+        <span class="n">03</span>
+        <div>
+          <h3>Companion structures</h3>
+          <p>Continuity and identity held as architecture. One author, one mouth.</p>
+        </div>
+      </li>
+      <li>
+        <span class="n">04</span>
+        <div>
+          <h3>Voice engineering</h3>
+          <p>Breath, pace and mood in realtime — tuned by ear, then made reproducible.</p>
+        </div>
+      </li>
+    </ul>
+
+    <section class="cli" aria-label="Contact commands">
+      <div class="sec-head"><span>// Execute</span><span>contact on request</span></div>
+      <div class="commands" id="commands"></div>
+      <p class="hint">
+        <span>[1–4] source · [space] play · [f] full</span>
+        <span>© 2026</span>
+      </p>
+    </section>
+  </aside>
+
+  <main class="right">
+    <section class="stage" id="stage" aria-label="Project media">
+      <video id="video" playsinline preload="metadata"></video>
+      <img id="photo" alt="">
+      <div class="feed" id="feed" aria-live="polite">
+        <div class="feed-inner">
+          <div class="reticle" aria-hidden="true"></div>
+          <p class="feed-code">NO FEED</p>
+          <p class="feed-file" id="feed-file">—</p>
+          <p class="feed-hint">Drop the reel into /media, then reload. See media/README.md.</p>
+        </div>
+      </div>
+
+      <div class="stage-top">
+        <span class="rec"><i></i><b id="hud-id">[P.01]</b><span id="hud-domain">VOICE ENGINEERING</span></span>
+        <span class="src-readout" id="src-readout">AWAITING MEDIA</span>
+      </div>
+
+      <div class="stage-title">
+        <h2 id="proj-title">A voice that sounds like someone</h2>
+        <p id="proj-meta">Streaming TTS · DSP · latency</p>
+      </div>
+
+      <button class="big-play" id="big-play" type="button" aria-label="Play video">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+
+      <div class="controls">
+        <button class="ctl" id="pp" type="button" aria-label="Play">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+        </button>
+        <input class="scrub" id="scrub" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek">
+        <span class="time" id="time">00:00 / 00:00</span>
+        <button class="ctl" id="mute" type="button" aria-label="Mute">
+          <svg class="i-vol" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+          <svg class="i-mute" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm13.2 1.1-1.4-1.4L14 10.5l-1.8-1.8-1.4 1.4L12.6 12l-1.8 1.8 1.4 1.4 1.8-1.8 1.8 1.8 1.4-1.4-1.8-1.8z"/></svg>
+        </button>
+        <button class="ctl" id="fs" type="button" aria-label="Fullscreen">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v2H6v4H4V4zm10 0h6v6h-2V6h-4V4zM4 14h2v4h4v2H4v-6zm14 0h2v6h-6v-2h4v-4z"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="strip" id="strip" aria-label="Select a project"></section>
+    <section class="log" id="log" aria-live="polite"></section>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
